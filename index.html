@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Personal Google Workspace OAuth — App Info</title>
+<style>
+  :root { color-scheme: light dark; }
+  body { font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+         line-height: 1.65; margin: 0 auto; max-width: 44rem; padding: 3rem 1.25rem;
+         color: #16181d; background: #fff; }
+  @media (prefers-color-scheme: dark) {
+    body { color: #e6e8ec; background: #0f1115; }
+    code, .box { background: #1a1d24; }
+    a { color: #7aa7ff; }
+  }
+  h1 { font-size: 1.9rem; letter-spacing: -0.02em; margin-bottom: .25rem; }
+  .sub { color: #6b7280; margin-top: 0; }
+  h2 { font-size: 1.15rem; margin-top: 2.25rem; letter-spacing: -0.01em; }
+  code { padding: .15em .4em; border-radius: 4px; font-size: .9em; }
+  .box { border: 1px solid rgba(128,128,128,.25); border-radius: 8px; padding: 1rem 1.15rem; }
+  ul { padding-left: 1.2rem; }
+  li { margin: .35rem 0; }
+  footer { margin-top: 3rem; padding-top: 1.25rem; border-top: 1px solid rgba(128,128,128,.25);
+           font-size: .875rem; color: #6b7280; }
+</style>
+</head>
+<body>
+<h1>Personal Google Workspace Integration</h1>
+<p class="sub">Application information page &mdash; personal, single-user project</p>
+
+<div class="box">
+  <strong>What this is.</strong> A private Google Cloud OAuth&nbsp;2.0 project used to
+  connect <a href="https://github.com/NousResearch/hermes-agent">Hermes&nbsp;Agent</a>
+  to a single Google account, running entirely on one personal computer.
+  This page exists to satisfy the OAuth consent-screen configuration in the
+  Google&nbsp;Cloud console. No third party has access to any data.
+</div>
+
+<h2>What the integration can access</h2>
+<p>The following Google Workspace permissions are requested. No permission outside this list is used.</p>
+<ul>
+  <li><strong>Gmail</strong> &mdash; read, send, and modify messages</li>
+  <li><strong>Google Calendar</strong> &mdash; view and edit events</li>
+  <li><strong>Google Drive</strong> &mdash; view, create, edit, share, and delete files</li>
+  <li><strong>Google Sheets</strong> &mdash; view and edit spreadsheets</li>
+  <li><strong>Google Docs</strong> &mdash; view and create documents</li>
+  <li><strong>Contacts</strong> &mdash; read contact information</li>
+</ul>
+
+<h2>How your data is handled</h2>
+<ul>
+  <li>All access happens <strong>locally on one personal computer</strong>.</li>
+  <li>Data is <strong>never</strong> sold, rented, or shared with third parties.</li>
+  <li>No analytics, tracking, or advertising technology is used.</li>
+  <li>Google data is used <strong>only</strong> to operate the features you directly request.</li>
+  <li>Access can be revoked at any time from your
+      <a href="https://myaccount.google.com/permissions">Google account permissions page</a>.</li>
+</ul>
+
+<h2>Human review</h2>
+<p>This is a personal project with a single user, so the OAuth client is not submitted for
+Google verification. Every request to authorize will show Google&rsquo;s standard
+&ldquo;Google hasn&rsquo;t verified this app&rdquo; screen; choose
+<strong>Advanced &rarr; Go to (unsafe)</strong> to continue. Expect the consent screen to show
+a generic app name rather than a branded one, because branding is only displayed for verified apps.</p>
+
+<footer>
+  Last updated: 2026-10-02 &middot; This is a personal-use project and is not a commercial product.
+</footer>
+</body>
+</html>

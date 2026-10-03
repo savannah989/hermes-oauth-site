@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy &mdash; Personal Google Workspace Integration</title>
+<style>
+  :root { color-scheme: light dark; }
+  body { font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+         line-height: 1.7; margin: 0 auto; max-width: 44rem; padding: 3rem 1.25rem;
+         color: #16181d; background: #fff; }
+  @media (prefers-color-scheme: dark) {
+    body { color: #e6e8ec; background: #0f1115; }
+    h2 { border-bottom: 1px solid rgba(128,128,128,.25); padding-bottom: .3rem; }
+    a { color: #7aa7ff; }
+  }
+  h1 { font-size: 1.9rem; letter-spacing: -0.02em; }
+  .sub { color: #6b7280; margin-top: 0; }
+  h2 { font-size: 1.1rem; margin-top: 2.5rem; }
+  ul { padding-left: 1.2rem; }
+  li { margin: .4rem 0; }
+  code { background: rgba(128,128,128,.15); padding: .15em .4em; border-radius: 4px; font-size: .9em; }
+</style>
+</head>
+<body>
+<h1>Privacy Policy</h1>
+<p class="sub">Personal Google Workspace Integration (Hermes Agent OAuth client)</p>
+
+<p>This policy describes how a personal, single-user Google Cloud project accesses Google user data.
+It applies to the Google account that authorized the project and to no one else.</p>
+
+<h2>1. Who processes your data</h2>
+<p>The account holder is the sole data controller. All processing occurs on the account
+holder&rsquo;s own computer. No server, API, or third-party service receives, inspects, or
+stores any Google data.</p>
+
+<h2>2. What data is accessed and why</h2>
+<p>The OAuth client requests the following scopes. Each is used only for the purpose stated:</p>
+<ul>
+  <li><code>gmail.readonly</code> &mdash; read messages so a requested search or summary can be produced</li>
+  <li><code>gmail.send</code> &mdash; send a message only when explicitly instructed</li>
+  <li><code>gmail.modify</code> &mdash; reply, label, and archive in reply to an explicit instruction</li>
+  <li><code>calendar</code> &mdash; read events and create or edit events on request</li>
+  <li><code>drive</code> &mdash; search, read, upload, download, share, and delete files on request</li>
+  <li><code>spreadsheets</code> &mdash; read and write cell values on request</li>
+  <li><code>documents</code> &mdash; read and create documents on request</li>
+  <li><code>contacts.readonly</code> &mdash; read contacts to resolve a name to an email address</li>
+</ul>
+<p>No scope is exercised for advertising, profiling, model training, advertising resale, or any
+purpose other than the operations above.</p>
+
+<h2>3. Where your data is stored</h2>
+<p>OAuth tokens are stored in the Hermes configuration directory on the same computer, in the
+local file <code>google_token.json</code>. This file never leaves that machine and is not
+transmitted to any external service. Retrieved Google content is content you asked for; anything
+written back to Google &mdash; a sent email, a created event, a new Drive file &mdash; goes only
+to your own Google account.</p>
+
+<h2>4. Sharing</h2>
+<p>No Google data is shared with, sold to, or rented to any third party. The only external
+transmission of Google data is to Google&rsquo;s own API endpoints, that is, a request made to
+Google for the account you authorized.</p>
+
+<h2>5. Retention and deletion</h2>
+<p>Tokens persist for as long as authorization remains active. Access ends immediately when
+access is revoked at
+<a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>, and
+deleting the local token file removes the stored credential entirely.</p>
+
+<footer>
+  Last updated: 2026-10-02 &middot; Personal-use project. Effective on publication.
+</footer>
+</body>
+</html>
